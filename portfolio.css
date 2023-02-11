@@ -1,0 +1,238 @@
+*{
+    margin:0;
+    padding:0;
+}
+.container{
+    height:100vh;
+    width: 100%;
+    background-image:url(bc.jpg);
+    background-position: center ;
+    padding-left: 5%;
+    background-size: cover;
+    padding-right: 5%;
+    box-sizing: border-box;
+    position: relative;
+}
+.navbar{
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 260px;
+    cursor:pointer;
+}
+nav{
+    flex:1;
+    padding-left: 30px;
+    text-align: right;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+    font-family:  'Itim', cursive;
+    font-size: 30px;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: palevioletred;
+    position: relative;
+    letter-spacing: 5px;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: black;
+    transition: width 0.3s;
+}
+nav ul li a:hover::after{
+    width: 50%;
+}
+.content h1{
+    font-size:60px;
+    font-weight:500;
+    margin-top:24px;
+    margin-bottom: 15px;
+    color: black;
+     font-family: 'Pacifico', cursive;
+    }
+    
+.content p{
+    font-size: 12px;
+    color: black;
+    font-family:'Explora', cursive;
+}
+.content{
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.content .button{
+    display: inline-block;
+    background:  linear-gradient(90deg, rgba(136,131,134,1) 3%, rgba(252,208,234,1) 43%, rgba(148,221,233,1) 100%);
+    border-radius: 20px;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    
+    font-family:'Pacifico', cursive;
+    
+
+}
+.feature-img{
+    height:80%;
+    position: absolute;
+    bottom: 0;
+    right: 60px;
+    border-radius: 20px;
+   
+}
+.social-links{
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -80px;
+    bottom: 180px;
+}
+.social-links a{
+    text-decoration: none;
+    color: black;
+    padding-right: 20px;
+    font-size: 14px;
+
+
+}
+.pictures{
+    height: 350px;
+    position: absolute;
+    bottom: 0;
+    right: 150px;
+    border-radius: 20px;
+}
+.pic{
+    height:350px;
+    position:absolute;
+    bottom:0;
+    left:550px;
+    border-radius: 20px;
+}
+.p{
+    height:350px;
+    position:absolute;
+    bottom:0;
+    left:180px;
+    border-radius: 20px;
+}
+.hobbie h1{
+    font-size: 50px;
+    font-family: 'Old Standard TT', serif;
+    color: palevioletred;
+}
+.hobbie{
+    margin-left: 2%;
+    margin-top: 2%;
+}
+.hobbie p{
+    font-size: 18px;
+    font-family:  'Rubik Puddles', cursive;
+    color: black;
+}
+.hello{
+    height:55%;
+    position:absolute;
+    bottom:0;
+    left:550px;
+    border-radius: 20px;
+}
+.define{
+    font-family: 'Rubik Puddles', cursive;
+    color: black;
+    font-weight: 300;
+    font-size: 18px;
+    right: 100px;
+    margin: 4%;
+    padding: 4%;
+}
+/* .eat h1{
+    font-size: 50px;
+    font-family: 'Old Standard TT', serif;
+    color: palevioletred;
+}
+.eat p{
+    font-size: 18px;
+    font-family:  'Rubik Puddles', cursive;
+    color: black;
+} */
+.edu{
+    font-family: 'Rubik Puddles', cursive;
+    color: black;
+    font-weight: 300;
+    font-size: 18px;
+    
+    margin: 6%;
+    padding: 6%;
+}
+.g{
+    height:15%;
+    position:absolute;
+    bottom:0;
+    left:150px;
+    border-radius: 0px;
+    margin: 4%;
+    padding: 4%;
+}
+.X{
+    height:15%;
+    position:absolute;
+    bottom:0;
+    left:350px;
+    border-radius: 0px;
+    margin: 4%;
+    padding: 4%;
+}
+
+.hck{
+    height:15%;
+    position:absolute;
+    bottom:0;
+    left:550px;
+    border-radius: 0px;
+    margin: 4%;
+    padding: 4%;
+}
+/*forlaptop*/
+@media screen and (min-width:769px) and (max-width: 1024px){
+    /* nav ul{
+        width: 100%;
+        background: pink;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+          
+    }
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    } */
+    
+}
+/*fortablet*/
+
+@media screen and (min-width:481px) and (max-width:768px){
+
+}
+/* for phone */
+@media screen and (min-width:220px ) and (max-width:560px ){
+
+}
+/* use display: flex to keep the picture in middle by keeping the whole picture and paragraph in the same div */
